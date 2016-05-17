@@ -77,20 +77,19 @@ public class SpanishFlashcards {
 	private void spanToEng() {
 		//TODO
 		Random rand = new Random();
-		FlashcardStack.OrderedStackList cur = cardStack.getSpanishHighest();
+		FlashcardStack.OrderedStackList cur = cardStack.getSpanishLowest();
 		ArrayList<FlashcardStack.Card> curCards = cur.getCards();
 		FlashcardStack.Card curC; 
 		int curSize = curCards.size();
 		int randChoice;
 		while(!in.equals("-1")){
-			if(!((curCards.size() > (curSize / 2)) || cur.equals(cardStack.getSpanishHighest())) || curCards.size() == 0){
+			if(!((curCards.size() > (curSize / 2)) || cur.equals(cardStack.getSpanishLowest())) || curCards.size() == 0){
 				if(curCards.size() == 0){
 					cardStack.removeSpanishRow(cur.getScore());
 				}
-				cur = cardStack.getSpanishHighest();
+				cur = cardStack.getSpanishLowest();
 				curCards = cur.getCards();
 				curSize = curCards.size();
-				System.out.println(cur.getScore());
 			}
 			if(curCards.size() > 1){
 				randChoice = rand.nextInt(curCards.size() - 1);
@@ -111,8 +110,7 @@ public class SpanishFlashcards {
 				curC.spnIncorrect();
 				cur.moveCard(curC, cur.getScore() + incorrectMod);
 			}
-			
-			cardStack.getSpanishHighest().printScoreDist();
+
 		}
 	}
 
@@ -200,7 +198,7 @@ public class SpanishFlashcards {
 				} else {
 					engStack.addCardEng(new Card(span,eng,spanScore,engScore));
 				}	
-				getSpanishHighest().printScoreDist();
+				getSpanishLowest().printScoreDist();
 				System.out.println();
 			}
 
@@ -209,18 +207,17 @@ public class SpanishFlashcards {
 
 		public void removeSpanishRow(int s) {
 			// TODO Auto-generated method stub
-			spanStack.getHighest().removeRow(s);
-			
+			spanStack = spanStack.getLowest().removeRow(s);
 		}
 
 		public OrderedStackList getSpanishHighest() {
 			return spanStack.getHighest();
 		}
-		
+
 		public OrderedStackList getSpanishLowest() {
 			return spanStack.getLowest();
 		}
-		
+
 		public void addCard(String spanish, String english){
 			spanStack.addCardEng(new Card(spanish, english, 0, 0));
 			engStack.addCardEng(new Card(spanish, english, 0, 0));
@@ -243,20 +240,45 @@ public class SpanishFlashcards {
 				cards.add(c);
 			}
 
-			public void removeRow(int s) {
+			public OrderedStackList removeRow(int s) {
 				if(score == s){
-					if(greater != null){
-						lesser.greater = greater;
-					} else {
-						lesser.greater = null;
+					if(greater == null){
+						if(lesser != null){
+							lesser.greater = null;
+							return lesser;
+						} else {
+							return null;
+						}
+					}
+
+					if(lesser == null){
+						if(greater != null){
+							greater.lesser = null;
+							return greater;
+						} else {
+							return null;
+						}
 					}
 					
-					if(lesser != null){
-						greater.lesser = lesser;
+					lesser.greater = greater;
+					greater.lesser = lesser;
+					return lesser;
+					
+					
+				} else if (s > score){
+					if(greater != null){
+						return greater.removeRow(s);
 					} else {
-						greater.lesser = null;
+						return null;
+					}
+				} else {
+					if(lesser != null){
+						return lesser.removeRow(s);
+					} else {
+						return null;
 					}
 				}
+
 			}
 
 			public void printScoreDist() {
@@ -316,39 +338,17 @@ public class SpanishFlashcards {
 
 			public OrderedStackList getHighest(){
 				if(greater == null){
-					if(cards.size() == 0){
-						return lesser;
-					}
 					return this;
 				} else {
-					if(greater.hasGreater()){
-						return greater.getHighest();
-					} else {
-						if(greater.getSize() == 0){
-							return this;
-						} else {
-							return greater.getHighest();
-						}
-					}
+					return greater.getHighest();
 				}
 			}
-			
+
 			public OrderedStackList getLowest(){
 				if(lesser == null){
-					if(cards.size() == 0){
-						return greater;
-					}
 					return this;
 				} else {
-					if(lesser.hasLesser()){
-						return lesser.getLowest();
-					} else {
-						if(lesser.getSize() == 0){
-							return this;
-						} else {
-							return lesser.getLowest();
-						}
-					}
+					return lesser.getLowest();
 				}
 			}
 
@@ -370,7 +370,7 @@ public class SpanishFlashcards {
 				}
 				return true;
 			}
-			
+
 			public ArrayList<String> printStack(){
 				if(greater == null){
 					return printStack(new ArrayList<String>());
