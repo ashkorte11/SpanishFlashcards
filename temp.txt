@@ -1,0 +1,65 @@
+las afueras/suburbs/2/0
+el altillo/attic/2/0
+aconsejar/to advise/2/0
+el balcón/balcony/2/0
+la cocina/kitchen/1/0
+el comedor/dining room/0/0
+el dormitorio/bedroom/0/0
+la entrada/entrance/0/0
+la escalera/stairs/3/0
+el garaje/garage/0/0
+el jardín/garden/0/0
+la oficina/office/1/0
+el pasillo/hallway/0/0
+el patio/patio/1/0
+la sala/living room/0/0
+el sótano/basement/0/0
+la alfombra/carpet/0/0
+la almohada/pillow/3/0
+el armario/closet/0/0
+el cartel/poster/3/0
+la cómoda/chest of drawers/3/0
+las cortinas/curtains/1/0
+el cuadro/picture/0/0
+el estante/bookcase/3/0
+la lámpara/lamp/0/0
+la luz/light/0/0
+la manta/blanket/3/0
+la mesita/end table/3/0
+la mesita de noche/night stand/0/0
+los muebles/furniture/0/0
+la pared/wall/3/0
+la pintura/painting/0/0
+el sillón/armchair/0/0
+el sofá/sofa/0/0
+la cafetera/coffee maker/1/0
+la estufa/stove/0/0
+el congelador/freezer/0/0
+el horno/oven/0/0
+el horno de microondas/microwave/1/0
+la lavadora/washing machine/0/0
+el lavaplatos/dishwasher/1/0
+el refrigerador/refrigerator/3/0
+la secadora/clothes dryer/0/0
+la tostadora/toaster/0/0
+la copa/wineglass/0/0
+la cuchara/spoon/0/0
+el cuchillo/knife/0/0
+el plato/plate/0/0
+la servilleta/napkin/0/0
+la taza/cup/3/0
+el tenedor/fork/0/0
+el vaso/glass/3/0
+arreglar/to straighten up/0/0
+barrer el suelo/to sweep the floor/1/0
+cocinar/to cook/0/0
+ensuciar/to get something dirty/3/0
+hacer la cama/to make the bed/0/0
+quehaceres/chores/0/0
+limpiar la casa/to clean the house/3/0
+pasar la aspiradora/to vacuum/0/0
+planchar la ropa/to iron the clothes/1/0
+poner la mesa/to set the table/3/0
+quitar la messa/to clear the table/1/0
+quitar el polvo/to dust/3/0
+sacar la basura/to take out the trash/0/0
