@@ -1,0 +1,94 @@
+la boca/mouth/0/0
+el brazo/arm/0/0
+la cabeza/head/0/0
+el corazón/heart/0/0
+el cuello/neck/0/0
+el cuerpo/body/0/0
+el dedo/finger/0/0
+el dedo del pie/toe/0/0
+el estómago/stomach/0/0
+la garganta/throat/0/0
+el hueso/bone/0/0
+la nariz/nose/0/0
+el oído/inner ear/0/0
+el ojo/eye/0/0
+la oreja/ear/0/0
+el pie/foot/0/0
+la pierna/leg/0/0
+la rodilla/knee/0/0
+el tobillo/ankle/0/0
+el accidente/accident/0/0
+el antibiótico/antibiotic/0/0
+la aspirina/aspirin/0/0
+la clínica/clinic/0/0
+el consultorio/doctor's office/0/0
+la dentista/dentist/0/0
+la doctora/doctor/0/0
+el dolor/pain/0/0
+el dolor de cabeza/headache/0/0
+el enfermero/nurse/0/0
+el examen médico/physical exam/0/0
+la farmacia/pharmacy/0/0
+la gripe/flu/0/0
+el hospital/hospital/0/0
+la infección/infection/0/0
+el medicamento/medication/0/0
+la medicina/medicine/0/0
+la operación/operation/0/0
+la paciente/patient/0/0
+la pastilla/pill/0/0
+la receta/prescription/0/0
+el resfriado/cold/0/0
+la sala de emergencia/emergency room/0/0
+la salud/health/0/0
+el síntoma/symptom/0/0
+la tos/cough/0/0
+caerse/to fall/0/0
+dañar/to damage/0/0
+darse con/to bump into/0/0
+doler/to hurt/0/0
+enfermarse/to get sick/0/0
+estar enfermo/to be sick/0/0
+estornudar/to sneeze/0/0
+lastimarse/to injure/0/0
+olvidar/to forget/0/0
+poner una inyección/to give an injection/0/0
+prohibir/to prohibit/0/0
+recetar/to prescribe/0/0
+romper/to break/0/0
+romperse/to break/0/0
+sacar un diente/to have a tooth removed/0/0
+ser alérgico/to be allergic/0/0
+sufrir una enfermedad/to suffer an illness/0/0
+tener dolor/to have pain/0/0
+tener fiebre/to have a fever/0/0
+tomar la temperatura/to take someone's temperature/0/0
+torcerse/to sprain/0/0
+toser/to cough/0/0
+congestionado/congested/0/0
+embarazada/pregnant/0/0
+grave/serious/0/0
+mareado/nauseated/0/0
+médico/medical/0/0
+saludable/healthy/0/0
+sano/healthy/0/0
+a menudo/often/0/0
+a tiempo/on time/0/0
+a veces/sometimes/0/0
+además/furthermore/0/0
+apenas/scarcely/0/0
+así/like this/0/0
+bastante/enough/0/0
+casi/almost/0/0
+con frecuencia/frequently/0/0
+de niño/as a child/0/0
+de vez en cuando/from time to time/0/0
+despacio/slowly/0/0
+menos/less/0/0
+muchas veces/many times/0/0
+poco/little/0/0
+por lo menos/at least/0/0
+pronto/soon/0/0
+rápido/quickly/0/0
+todos los días/every day/0/0
+mientras/while/0/0

@@ -1,0 +1,86 @@
+la aplicación/app/0/0
+la cámara digital/digital camera/0/0
+el canal/channel/0/0
+el cargador/charger/0/0
+el cibercafé/cybercafe/0/0
+el control remoto/remote control/0/0
+el correo de voz/voice mail/0/0
+el disco compacto/CD/0/0
+el estéreo/stereo/0/0
+el reproductor de CD/CD player/0/0
+el reproductor de MP3/MP3 player/0/0
+el teléfono celular/cell phone/0/0
+el televisor/television set/0/0
+apagar/to turn off/0/0
+funcionar/to work/0/0
+llamar/to call/0/0
+poner/to turn on/0/0
+prender/to turn on/0/0
+sonar/to ring/0/0
+descompuesto/not working/0/0
+lento/slow/0/0
+lleno/full/0/0
+abrazar/to hug/0/0
+ayudar/to help/0/0
+besar/to kiss/0/0
+encontrar/to meet/0/0
+saludar/to greet/0/0
+el archivo/file/0/0
+la arroba/@ symbol/0/0
+el blog/blog/0/0
+el buscador/browser/0/0
+la computadora portátil/laptop/0/0
+la conexión inalámbrica/wireless connection/0/0
+la dirección electrónica/email address/0/0
+la impresora/printer/0/0
+el mensaje de texto/text message/0/0
+la página principal/home page/0/0
+la pantalla/screen/0/0
+el programa de computación/software/0/0
+el ratón/mouse/0/0
+la red/network/0/0
+el reproductor de DVD/DVD player/0/0
+el sitio web/website/0/0
+el teclado/keyboard/0/0
+borrar/to erase/0/0
+chatear/to chat/0/0
+descargar/to download/0/0
+escanear/to scan/0/0
+grabar/to record/0/0
+guardar/to save/0/0
+imprimir/to print/0/0
+navegar en Internet/to surf the Internet/0/0
+la autopista/highway/0/0
+el baúl/trunk/0/0
+la calle/street/0/0
+la carretera/highway/0/0
+el capó/hood/0/0
+el cofre/hood/0/0
+el carro/car/0/0
+el coche/car/0/0
+la circulación/traffic/0/0
+el tráfico/traffic/0/0
+el garaje/garage/0/0
+el taller/repair shop/0/0
+la gasolina/gasoline/0/0
+la gasolinera/gas station/0/0
+la licencia de conducir/driver's license/0/0
+la llanta/tire/0/0
+el mecánico/mechanic/0/0
+el parabrisas/windshield/0/0
+la velocidad máxima/speed limit/0/0
+el volante/steering wheel/0/0
+arrancar/to start/0/0
+arreglar/to fix/0/0
+bajar de/to get off of/0/0
+conducir/to drive/0/0
+manejar/to drive/0/0
+estacionar/to park/0/0
+llenar/to fill/0/0
+parar/to stop/0/0
+revisar el aceite/to check the oil/0/0
+subir a/to get on/0/0
+por aquí/around here/0/0
+por ejemplo/for example/0/0
+por eso/therefore/0/0
+por fin/finally/0/0

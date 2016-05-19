@@ -1,5 +1,4 @@
-las afueras/suburbs/0/0
 el altillo/attic/0/0
-aconsejar/to advise/0/0
-el balcón/balcony/0/0
 la cocina/kitchen/0/0
+aconsejar/to advise/-3/0
+las afueras/suburbs/-6/0

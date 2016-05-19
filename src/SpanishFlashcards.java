@@ -11,7 +11,7 @@ public class SpanishFlashcards {
 	static final int incorrectMod = -3, correctMod = 1;
 	Scanner in, userIn;
 	FileOutputStream out;
-	final static String source = (new File("")).getAbsolutePath() + "\\wordBank.txt";
+	final static String source = (new File("")).getAbsolutePath() + "\\ch11.txt";
 	FlashcardStack cardStack;
 
 	public SpanishFlashcards() {
@@ -45,6 +45,9 @@ public class SpanishFlashcards {
 				userPos = 0;
 				break;
 			case 5:
+				cardStack.printSpnDist();
+				break;
+			case 6:
 				System.exit(0);
 				break;
 			default:
@@ -66,8 +69,10 @@ public class SpanishFlashcards {
 			return 3;
 		case "V":
 			return 4;
-		case "X":
+		case "P":
 			return 5;
+		case "X":
+			return 6;
 		default:
 			System.out.println("Invalid selection, please choose again");
 			return 0;
@@ -82,7 +87,8 @@ public class SpanishFlashcards {
 		FlashcardStack.Card curC; 
 		int curSize = curCards.size();
 		int randChoice;
-		while(!in.equals("-1")){
+		String userChoice = "";
+		while(!userChoice.equals("-1")){
 			if(!((curCards.size() > (curSize / 2)) || cur.equals(cardStack.getSpanishLowest())) || curCards.size() == 0){
 				if(curCards.size() == 0){
 					cardStack.removeSpanishRow(cur.getScore());
@@ -101,12 +107,16 @@ public class SpanishFlashcards {
 			curCards.remove(randChoice);
 
 			System.out.println(curC.getSpanish());
-			if(userIn.nextLine().toLowerCase().equals(curC.getEnglish())){
+			userChoice = userIn.nextLine().toLowerCase();
+			
+			if(userChoice.equals("-1")){
+				System.out.println("Exiting to Main Menu");
+			}else if(userChoice.equals(curC.getEnglish().toLowerCase())){
 				System.out.println("Correct!");
 				curC.spnCorrect();
 				cur.moveCard(curC, cur.getScore() + correctMod);
 			} else {
-				System.out.println("Incorrect");
+				System.out.println("Incorrect, Correct Answer: " + curC.getEnglish());
 				curC.spnIncorrect();
 				cur.moveCard(curC, cur.getScore() + incorrectMod);
 			}
@@ -133,7 +143,8 @@ public class SpanishFlashcards {
 		System.out.println("\tA  - Add Card");
 		System.out.println("\tE  - English to Spanish");
 		System.out.println("\tS  - Spanish to English");
-		System.out.println("\tV - Save");
+		System.out.println("\tP  - Print Score Distribution");
+		System.out.println("\tV  - Save");
 		System.out.println("\tX  - Exit");
 	}
 
@@ -154,8 +165,6 @@ public class SpanishFlashcards {
 
 	public void save(){
 		try{
-			//			Files.delete(FileSystems.getDefault().getPath(source));
-			//			File file = new File(source);
 			FileWriter out = new FileWriter(source);
 			for(String c : cardStack.getCards()){
 				out.write(c);
@@ -205,8 +214,11 @@ public class SpanishFlashcards {
 			in.close();
 		}
 
+		public void printSpnDist() {
+			spanStack.printScoreDist();
+		}
+
 		public void removeSpanishRow(int s) {
-			// TODO Auto-generated method stub
 			spanStack = spanStack.getLowest().removeRow(s);
 		}
 
@@ -259,12 +271,12 @@ public class SpanishFlashcards {
 							return null;
 						}
 					}
-					
+
 					lesser.greater = greater;
 					greater.lesser = lesser;
 					return lesser;
-					
-					
+
+
 				} else if (s > score){
 					if(greater != null){
 						return greater.removeRow(s);
@@ -474,8 +486,7 @@ public class SpanishFlashcards {
 			}
 
 			public String toString(){
-				return spanish + " :|: " + english + " :|: " + spnScore + " :|: " + engScore;
-
+				return spanish + "/" + english + "/" + spnScore + "/" + engScore;
 			}
 
 			public String getSpanish(){
